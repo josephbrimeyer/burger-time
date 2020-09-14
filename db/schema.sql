@@ -1,6 +1,3 @@
-###
-Schema
-
 CREATE DATABASE burgertime_db;
 USE burgertime_db;
 
