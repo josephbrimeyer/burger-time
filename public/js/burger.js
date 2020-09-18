@@ -22,8 +22,8 @@ $(function () {
     // Make sure to preventDefault on a submit event.
     event.preventDefault();
 
-    var newBurger = {
-      name: $("#bu").val().trim(),
+    let newBurger = {
+      name: $("#ca").val().trim(),
       devoured: $("[name=devour]:checked").val().trim(),
     };
 
@@ -39,7 +39,7 @@ $(function () {
   });
 
   $(".delete-burger").on("click", function (event) {
-    var id = $(this).data("id");
+    let id = $(this).data("id");
 
     // Send the DELETE request.
     $.ajax("/api/burger/" + id, {
