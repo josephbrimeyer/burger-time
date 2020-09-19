@@ -1,39 +1,42 @@
 <section class="wrapper">
-    <img class="bgr-img" src="/burger.png" />
-    <div></div>
-    <h1>Burger-Time!</h1>
+    <img class="bgr-img" src="../burger.png" />
 
-    <h2>Burgers ready to devour!</h2>
+    <div class="row">
+        <div class="burger-list">
+            <h1>Burger-Time!</h1>
 
-    <ul id="unconsumed">
-        {{#each burgers}}
-        {{#unless devoured}}
-        {{> burgers/burger-block devoured=false}}
-        {{/unless}}
-        {{/each}}
-    </ul>
-    </div>
-    <div>
-        <h2>Devoured burgers!</h2>
+            <h3>Burgers ready to devour!</h3>
 
-        <ul id="consumed">
-            {{#each burgers}}
-            {{#if devoured}}
-            {{> burgers/burger-block devoured=true}}
-            {{/if}}
-            {{/each}}
-        </ul>
-    </div>
-
-    <h2>Add a burger</h2>
-    <form class="create-form">
-
-        <div class="form-group">
-            <label for="name"></label>
-            <input type="text" id="burger" name="name">
+            <ul id="unconsumed">
+                {{#each burgers}}
+                {{#unless devoured}}
+                {{> burgers/burger-block devoured=false}}
+                {{/unless}}
+                {{/each}}
+            </ul>
         </div>
 
-        <button type="submit">Add burger</button>
-    </form>
-    <p>Enter a burger to add to the list, click "Add Burger"</p>
+        <div class="burger-list">
+            <h3>Devoured burgers!</h3>
+
+            <ul id="consumed">
+                {{#each burgers}}
+                {{#if devoured}}
+                {{> burgers/burger-block devoured=true}}
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+
+        <h2>Add a burger</h2>
+        <form class="create-form">
+
+            <div class="form-group">
+                <label for="name"></label>
+                <input type="text" id="burger" name="name">
+            </div>
+
+            <button type="submit">Add Burger</button>
+        </form>
+        <p>Add a burger to the list, then click "Add Burger"</p>
 </section>
