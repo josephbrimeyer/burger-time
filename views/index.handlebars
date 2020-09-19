@@ -1,42 +1,39 @@
 <section class="wrapper">
     <img class="bgr-img" src="/burger.png" />
+    <div></div>
     <h1>Burger-Time!</h1>
 
-    <h2>Burgers ready to be devoured!</h2>
+    <h2>Burgers ready to devour!</h2>
 
     <ul id="unconsumed">
         {{#each burgers}}
         {{#unless devoured}}
-        {{> burgers/burger-block devour=true}}
+        {{> burgers/burger-block devoured=false}}
         {{/unless}}
         {{/each}}
     </ul>
+    </div>
+    <div>
+        <h2>Devoured burgers!</h2>
 
-    <h2>Devoured burgers!</h2>
-
-    <ul id="consumed">
-        {{#each burgers}}
-        {{#if devoured}}
-        {{> burgers/burger-block devour=false}}
-        {{/if}}
-        {{/each}}
-    </ul>
+        <ul id="consumed">
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured=true}}
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
 
     <h2>Add a burger</h2>
     <form class="create-form">
 
         <div class="form-group">
-            <label for="ca" id="burgerName">Burger Name:</label>
-            <input type="text" id="ca" name="burgerName">
+            <label for="name"></label>
+            <input type="text" id="burger" name="name">
         </div>
 
-        <div class="form-group">
-            <label for="burgers" class="select-craving">Select Burger or Devoured</label><br>
-            <input type="radio" name="devoured" value="1" class "select-craving" checked> Devoured!<br>
-            <input type="radio" name="devoured" value="0" class="select-craving"> Order!
-            <div>
-                <button type="submit" id="burger-btn">Add Burger</button>
-            </div>
-        </div>
+        <button type="submit">Add burger</button>
     </form>
+    <p>Enter a burger to add to the list, click "Add Burger"</p>
 </section>
