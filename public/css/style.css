@@ -2,6 +2,10 @@
   background-color: #861e1e;
 }
 
+body {
+  font-family: sans-serif;
+}
+
 li {
   padding: 5px;
   margin: 5px;
@@ -20,4 +24,18 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+.bgr-img {
+  max-width: 300px;
+  width: 100px;
+  height: auto;
+}
+#unconsumed {
+  float: left;
+  width: 50%;
+}
+#consumed {
+  float: right;
+  width: 50%;
 }
