@@ -31,10 +31,12 @@ li {
   width: 150px;
   height: auto;
 }
+
 #unconsumed {
   float: left;
   width: 50%;
 }
+
 #consumed {
   float: right;
   width: 50%;
