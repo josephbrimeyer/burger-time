@@ -1,16 +1,16 @@
 INSERT INTO burgers
-    (burgerName, devoured)
+    (burger_name, devoured)
 VALUES
-    ('Bacon Cheeseburger', true);
+    ('Bacon Cheeseburger');
 INSERT INTO burgers
-    (burgerName, devoured)
+    (burger_name, devoured)
 VALUES
-    ('Plain Burger', false);
+    ('Plain Burger');
 INSERT INTO burgers
-    (burgerName, devoured)
+    (burger_name, devoured)
 VALUES
-    ('Vegi Burger', false);
+    ('Vegi Burger');
 INSERT INTO burgers
-    (burgerName, devoured)
+    (burger_name, devoured)
 VALUES
-    ('BBQ Burger', true);
+    ('BBQ Burger');
