@@ -24,7 +24,7 @@ Burger-time is an application that allows a user to add burgers to a list. The b
 ## Installation
 
 To install the necessary dependencies, run the following command:
-The user can launch the application by clicking on the following link: https://josephbrimeyer.github.io/burger-time/
+The user can launch the application by clicking on the following link: https://sheltered-bayou-56466.herokuapp.com/
 
 ## Usage
 
