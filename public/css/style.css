@@ -23,13 +23,26 @@ li {
 }
 
 .form-group {
-  align-content: center;
+  margin-left: 50px;
+  color: #861e1e;
+  padding: 15px;
+  text-align: center;
 }
 
 .bgr-img {
   max-width: 400px;
   width: 150px;
   height: auto;
+}
+
+#burger-btn {
+  align-self: center;
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 18pt;
+  border-radius: 8px;
 }
 
 #unconsumed {
@@ -43,11 +56,28 @@ li {
 }
 #ca {
   margin-left: 50px;
-  background-color: lightgreen;
+  background-color: lightblue;
   border-radius: 4px;
   padding: 10px;
   width: 300px;
 
   text-align: center;
   font-size: 14pt;
+}
+
+.devour-burger {
+  font-size: 14pt;
+  padding: 5pt;
+  margin: 10pt;
+  background-color: blue;
+  text-align: center;
+}
+
+.delete-burger {
+  font-size: 12pt;
+  padding: 7pt;
+  margin: 10pt;
+  margin-left: 20pt;
+  color: black;
+  background-color: red;
 }
