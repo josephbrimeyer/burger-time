@@ -16,6 +16,10 @@ router.get("/", function (req, res) {
   });
 });
 
+//  Accepts post calls from front end.  Calls create method from burger model (/models/burger.js)
+//  With burger object data received from the client
+//  Then sends id back to the client
+
 router.post("/api/burgers", function (req, res) {
   burger.insertOne(
     ["burger_name", "devoured"],

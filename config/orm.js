@@ -2,9 +2,11 @@
 let connection = require("../config/connection.js");
 
 // Do work on these...
-//  * `selectAll()`
-//  * `insertOne()`
-//  * `updateOne()`
+function selectAll() {}
+
+function insertOne() {}
+
+function updateOne() {}
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
