@@ -48,7 +48,7 @@ function objToSql(ob) {
 
 // Object for all our SQL statement functions.
 let orm = {
-  selectAll: function (tableInput, cb) {
+  all: function (tableInput, cb) {
     let queryString = "SELECT * FROM " + tableInput + ";";
     connection.query(queryString, function (err, result) {
       if (err) {
@@ -57,7 +57,7 @@ let orm = {
       cb(result);
     });
   },
-  insertOne: function (table, cols, vals, cb) {
+  create: function (table, cols, vals, cb) {
     let queryString = "INSERT INTO " + table;
 
     queryString += " (";

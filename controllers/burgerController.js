@@ -19,10 +19,9 @@ router.get("/", function (req, res) {
 //  Accepts post calls from front end.  Calls create method from burger model (/models/burger.js)
 //  With burger object data received from the client
 //  Then sends id back to the client
-// app.use(express.static(__dirname + "/public"));
 
 router.post("/api/burgers", function (req, res) {
-  burger.insertOne(
+  burger.create(
     ["burger_name", "devoured"],
     [req.body.burger_name, req.body.devoured],
     function (result) {
@@ -37,7 +36,7 @@ router.put("/api/burgers/:id", function (req, res) {
 
   console.log("condition", condition);
 
-  burger.updateOne(
+  burger.update(
     {
       devoured: req.body.devoured,
     },
@@ -56,7 +55,7 @@ router.put("/api/burgers/:id", function (req, res) {
 router.delete("/api/burgers/:id", function (req, res) {
   let condition = "id = " + req.params.id;
 
-  burger.deleteOne(condition, function (result) {
+  burger.delete(condition, function (result) {
     if (result.affectedRows == 0) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
