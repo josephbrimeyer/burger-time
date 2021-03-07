@@ -78,7 +78,7 @@ let orm = {
     });
   },
   // An example of objColVals would be {name: panther, sleepy: true}
-  updateOne: function (table, objColVals, condition, cb) {
+  update: function (table, objColVals, condition, cb) {
     let queryString = "UPDATE " + table;
 
     queryString += " SET ";
@@ -95,7 +95,7 @@ let orm = {
       cb(result);
     });
   },
-  deleteOne: function (table, condition, cb) {
+  delete: function (table, condition, cb) {
     let queryString = "DELETE FROM " + table;
     queryString += " WHERE ";
     queryString += condition;
