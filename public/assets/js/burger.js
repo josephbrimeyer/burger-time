@@ -2,7 +2,7 @@
 $(function () {
   $(".devour-burger").on("click", function (event) {
     let id = $(this).data("id");
-    let newDevour = $(this).data("newsleep");
+    let newDevour = $(this).data("newDevour");
 
     let newDevourState = {
       devoured: newDevour,
