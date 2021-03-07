@@ -1,7 +1,9 @@
+USE burgertime_db
+
 INSERT INTO burgers
-    (burger_name, devoured)
+    (burger_name)
 VALUES
-    ('Bacon Cheeseburger', true),
-    ('Plain Burger', true),
-    ('Vegi Burger', true),
-    ('BBQ Burger', true);
+    ('Bacon Cheeseburger'),
+    ('Plain Burger'),
+    ('Vegi Burger'),
+    ('BBQ Burger');
