@@ -2,6 +2,12 @@
   background-color: #861e1e;
 }
 
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
 body {
   /* background-image: url("../../burger.png"); */
   background-size: 100%;
@@ -82,4 +88,11 @@ li {
   margin-left: 20pt;
   color: black;
   background-color: red;
+}
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  height: 60px;
 }
