@@ -7,7 +7,7 @@
 
 ## Description
 
-Burger-time is an full stack, MVC application that allows a user to dynamically add burgers to a list. The burgers are seperated by burgers ready to devour, and devoured burgers. The burgers and their current status are stored in a database and are persistant across sessions. The application uses mySQL, Handlebars, Bootstrap, Express, Node.js, and JavaScript.
+Burger-time is a MVC, CRUD, application that allows a user to dynamically add burgers to a list. The burgers are seperated by burgers ready to devour, and devoured burgers. The burgers and their current status are stored in a database and are persistant across sessions. The application uses mySQL, Handlebars, Bootstrap, Express, Node.js, and JavaScript.
 
 ## Table of Contents
 
@@ -27,7 +27,7 @@ The user can launch the application by clicking on the following link: https://s
 
 ## Usage
 
-Upon launching the application the user is able to create a new burger, consume a burger, unconsume a burger, and delete a burger. The application tracks status of the burgers and the data persists in the database across sessions.
+Upon launching the application the user is able to create a new burger, consume a burger, crave a burger, and delete a burger. The application tracks status of the burgers and the data persists in the database across sessions.
 ![Demo](public/assets/images/Burger-Time.gif)
 
 ## Credits
