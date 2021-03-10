@@ -7,7 +7,7 @@
 
 ## Description
 
-Burger-time is an application that allows a user to add burgers to a list. The burgers are seperated by ready to consume and comsumed. The burgers and their status are persistant between sessions.
+Burger-time is an full stack, MVC application that allows a user to dynamically add burgers to a list. The burgers are seperated by burgers ready to devour, and devoured burgers. The burgers and their current status are stored in a database and are persistant across sessions. The application uses mySQL, Handlebars, Bootstrap, Express, Node.js, and JavaScript.
 
 ## Table of Contents
 
@@ -23,17 +23,14 @@ Burger-time is an application that allows a user to add burgers to a list. The b
 
 ## Installation
 
-To install the necessary dependencies, run the following command:
 The user can launch the application by clicking on the following link: https://sheltered-bayou-56466.herokuapp.com/
 
 ## Usage
 
-Upon launching the application the user is able to create a new burger, consume a burger, unconsume a burger, and delete a burger. The application tracks status of the burgers and the data persists across sessions.
-![Demo](./burger-time.gif)
+Upon launching the application the user is able to create a new burger, consume a burger, unconsume a burger, and delete a burger. The application tracks status of the burgers and the data persists in the database across sessions.
+![Demo](public/assets/images/Burger-Time.gif)
 
 ## Credits
-
-Trilogy, express, mongod, mongojs, mongoose, and morgan.
 
 ## License
 
